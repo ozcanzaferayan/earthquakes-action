@@ -40,7 +40,7 @@ let evalRes = (res) => {
                 return;
             }
             writeSmsToFile(smsText);
-            //sendSmsToRecievers(smsText);
+            sendSmsToRecievers(smsText);
         })
         .catch(err => console.log(err));
 }
