@@ -7,6 +7,7 @@
     "license": "MIT",
     "dependencies": {
         "cheerio": "^1.0.0-rc.3",
+        "dotenv": "^8.2.0",
         "node-fetch": "^2.6.1",
         "twilio": "^3.49.1"
     },
