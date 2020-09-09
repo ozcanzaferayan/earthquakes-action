@@ -37,10 +37,7 @@ jobs:
       with:
         name: sms
         path: sms.txt
-    - name: Git commits
-      shell: bash
-      run: |
-        echo test > testfile.txt
+    - run: |
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add .
