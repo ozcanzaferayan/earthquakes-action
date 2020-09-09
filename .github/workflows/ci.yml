@@ -33,8 +33,8 @@ jobs:
         DISTRICTS_DELIMITED_WITH_SEMICOLON: ${{ secrets.DISTRICTS_DELIMITED_WITH_SEMICOLON }}
         MIN_MAGNITUDE: ${{ secrets.MIN_MAGNITUDE }}
     - run: |
-        git config user.name ozcanzaferayan
-        git config user.email ozcanzaferayan@gmail.com
+        git config user.name github-actions
+        git config user.email github-actions@github.com
         git add previousEarthquakes.json
         git commit -m "Add [skip-ci]"
         git push
