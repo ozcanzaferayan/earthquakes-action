@@ -1,9 +1,10 @@
 name: Daily
 
-on: [push]
-  # schedule:
-  #   # Execute CI at every 5th minute
-  #   - cron: '*/5 * * * *'
+on:
+  push:
+  schedule:
+    # Execute CI at every 5th minute
+    - cron: '*/5 * * * *'
 
 jobs:
   build:
