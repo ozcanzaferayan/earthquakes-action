@@ -31,7 +31,7 @@ jobs:
         MSISDN_SENDER: ${{ secrets.MSISDN_SENDER }}
         TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
         TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
-        DISTRICTS_DELIMITED_WITH_SEMICOLON: ${{ secrets.DISTRICTS_DELIMITED_WITH_SEMICOLON }}
+        CITIES_DELIMITED_WITH_SEMICOLON: ${{ secrets.CITIES_DELIMITED_WITH_SEMICOLON }}
         MIN_MAGNITUDE: ${{ secrets.MIN_MAGNITUDE }}
     - name: Upload files
       uses: actions/upload-artifact@v2
