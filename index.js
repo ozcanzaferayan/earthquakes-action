@@ -88,11 +88,11 @@ let readLocalFileEarthquakes = () => {
 
 const getEarthquakesBySelectedCriteria = newEarthquakes => {
     const foundEarthquakes = [];
-    const districts = process.env.DISTRICTS_DELIMITED_WITH_SEMICOLON.split(';');
+    const cities = process.env.CITIES_DELIMITED_WITH_SEMICOLON.split(';');
     const minMagnitude = process.env.MIN_MAGNITUDE;
     newEarthquakes.forEach(earthquake => {
-        districts.forEach(district => {
-            if (earthquake.location.includes(district) && earthquake.mag >= minMagnitude) {
+        cities.forEach(city => {
+            if ((city === "*" || earthquake.location.includes(city)) && earthquake.mag >= minMagnitude) {
                 foundEarthquakes.push(earthquake);
             }
         });
